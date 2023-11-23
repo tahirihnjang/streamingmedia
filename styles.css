@@ -53,7 +53,8 @@ input:checked ~ ul {
 input:checked ~ ul .muzak-maker {
     margin-top: 20px;
     position: relative;
-    font-variant: small-caps;    
+    font-variant: small-caps;
+    font-size: 1.5rem;    
 }
 
 input:checked ~ label span {
@@ -223,7 +224,7 @@ section h2 {
     
     display: flex;
     flex-direction: column;
-    width: 100vw;
+    width: full;
     
 }
 
@@ -240,8 +241,11 @@ width: 100%;
 .playlists article {
     background: #0D8DFB;
     display: flex;
+    min-height: 150px;
     flex-direction:column ;
+    justify-content: space-evenly;
     color: #fff;
+    padding: 10px;
     margin: 10px 0px 10px 10px;
     
 }
@@ -251,9 +255,12 @@ width: 100%;
     background: #020659;
     display: flex;
     flex-direction:column ;
+    justify-content: space-evenly;
+    min-height: 160px;
     color: #fff;
+    padding: 10px;
     margin: 10px 0px 10px 10px;
-    
+   
 }
 
 
@@ -299,45 +306,6 @@ footer {
 }
 
 
-
-/* Scrollbar styles */
-#trending::-webkit-scrollbar,
-#playlists::-webkit-scrollbar,
-#curated::-webkit-scrollbar {
-    width: 100%;
-    background: #590242;
-}
-
-#trending::-webkit-scrollbar-track,
-#playlists::-webkit-scrollbar-track,
-#curated::-webkit-scrollbar-track {
-    background: #f1f1f1;
-}
-
-#trending::-webkit-scrollbar-thumb,
-#playlists::-webkit-scrollbar-thumb,
-#curated::-webkit-scrollbar-thumb {
-    background: #590242;
-}
-
-#trending::-webkit-scrollbar-thumb:hover,
-#playlists::-webkit-scrollbar-thumb:hover,
-#curated::-webkit-scrollbar-thumb:hover {
-    background: #020659;
-}
-
-audio::-webkit-media-controls-mute-button,
-audio::-webkit-media-controls-play-button,
-audio::-webkit-media-controls-enclosure {
-    /* Custom styles for audio controls */
-    background-color: #ffffff;
-    opacity: .7;
-    color: #000000;
-}
-
-
-
-
 @media screen and (max-width:834px) {
     .muzak-maker {
         font-weight: bold;
@@ -346,6 +314,7 @@ audio::-webkit-media-controls-enclosure {
         left: 50%;
         transform: translate(-50%, -50%);
         font-variant: small-caps;
+        font-size: 1.5rem;
     }
 }
 
@@ -375,6 +344,7 @@ audio::-webkit-media-controls-enclosure {
 
         font-weight: bold;
         font-variant: small-caps;
+        font-size: 1.5rem;
     }
    
     .button {     
@@ -390,7 +360,8 @@ audio::-webkit-media-controls-enclosure {
     .curated article, .playlists article {
         display: flex;
         flex-direction:row ;
-        
+        padding: 0px;
+        min-height: 120px;
     }
     .playlists-container {
         display: flex;
@@ -399,16 +370,16 @@ audio::-webkit-media-controls-enclosure {
     
 }
 
-/* #trending::-webkit-scrollbar {
+#articles-container::-webkit-scrollbar {
     width: 12px;
 }
 
-#trending::-webkit-scrollbar-track {
-    background-color: #f1f1f1;
+#articles-container::-webkit-scrollbar-track {
+    background-color: #590242;
 }
 
-#trending::-webkit-scrollbar-thumb {
-    background-color: #888;
+#articles-container::-webkit-scrollbar-thumb {
+    background-color: #590242;
     border-radius: 6px;
 }
 
@@ -423,7 +394,7 @@ audio::-webkit-media-controls-enclosure {
 
 #playlists::-webkit-scrollbar-track,
 #curated::-webkit-scrollbar-track {
-    background-color: #f1f1f1;
+    background-color: #590242;
 }
 
 #playlists::-webkit-scrollbar-thumb,
@@ -435,5 +406,5 @@ audio::-webkit-media-controls-enclosure {
 #playlists::-webkit-scrollbar-thumb:hover,
 #curated::-webkit-scrollbar-thumb:hover {
     background-color: #555;
-} */
+}
 
