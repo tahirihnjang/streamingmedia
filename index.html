@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="container">
-      <div class="menu-container">
+    <main class="container">
+      <nav class="menu-container">
         <input type="checkbox" id="menu-toggle" />
         <label for="menu-toggle" class="menu-icon">
           <span></span>
@@ -16,23 +16,23 @@
 
         <ul class="menu">
           <li class="muzak-maker">MuzakMaker</li>
-          <li href="#trending">Trending Songs</li>
-          <li href="#playlist">Your Playlists</li>
-          <li href="curated">Curated Playlists</li>
+          <li>Trending Songs</li>
+          <li>Your Playlists</li>
+          <li>Curated Playlists</li>
           <li>
             <img src="./utils/images/duke-silver.png" alt="Duke Silver" />
           </li>
         </ul>
-      </div>
+      </nav>
 
-      <div class="banner">
-        <h2>Smooth Jazz</h2>
+      <header class="banner">
+        <h1>Smooth Jazz</h1>
         <p>
           This station is dedicated to the soothing sounds of smooth jazz. This
           genre of commercially oriented crossover jazz became dominant in the
           1980s and early 1990s.
         </p>
-      </div>
+      </header>
 
       <section id="trending">
         <h2>Trending Songs</h2>
@@ -116,7 +116,7 @@
         <button>More Trending</button>
       </section>
 
-      <section class="playlists-container" id="playlist">
+      <section class="playlists-container">
         <div class="playlists">
           <h2>YOUR PLAYLISTS</h2>
 
@@ -174,7 +174,7 @@
           </div>
         </div>
 
-        <div class="curated" id="curated">
+        <div class="curated">
           <h2>CURATED PLAYLISTS</h2>
 
           <div class="articles-container">
@@ -228,9 +228,10 @@
           </div>
         </div>
       </section>
-    </div>
+    </main>
     <footer>
-      <p>&copy; 2022 Smooth Jazz</p>
+      <small>&copy; 2022 Smooth Jazz</small>
     </footer>
   </body>
 </html>
+
